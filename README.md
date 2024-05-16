@@ -1,7 +1,7 @@
 # ProjectCrudAngular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
-Product registration project, with academic purposes, to learn about Angular fundamentals, its modules, module organization, private components, file patterns, custom tags and CRUD methods.
+Product registration project, with academic purposes, to learn about Angular fundamentals, its organization, components, file patterns, custom tags and CRUD methods.
 
 First step will be to install the Angular CLI: 
 $ npm install -g @angular/cli
@@ -15,7 +15,7 @@ When installing, I chose the CSS style, SSR/SSG-yes.
 Note: I had to change the script execution security policy in powershell to run ng new.
 
 # PT-BR
-Projeto de cadastro de produtos, com finalidade acadêmica, para aprender os fundamentos de Angular, seus módulos, organização dos módulos, componentes privados do módulo, padrões de arquivos, Tags customizadas e métodos CRUD.
+Projeto de cadastro de produtos, com finalidade acadêmica, para aprender os fundamentos de Angular, sua organização, componentes, padrões de arquivos, Tags customizadas e métodos CRUD.
 
 Primeiro passo será instalar o Angular CLI:
 $ npm i -g @angular/cli
