@@ -10,5 +10,5 @@ import { HeaderComponent } from "./components/template/header/header.component";
     imports: [RouterOutlet, HeaderComponent]
 })
 export class AppComponent {
-  title = 'project_crud_angular';
+  currentItem = 'project_crud_angular';
 }
