@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Iphone 6s",
+      "price": 3000.99
+    },
+    {
+      "id": "2",
+      "name": "Macbook Pro 2015",
+      "price": 16999.99
+    },
+    {
+      "id": "3",
+      "name": "Samsung Galaxy S20",
+      "price": 7000.99
+    },
+    {
+      "id": "4",
+      "name": "Air pods",
+      "price": 400
+    },
+    {
+      "id": "5",
+      "name": "Playstation 5",
+      "price": 5000
+    }
+  ]
+}

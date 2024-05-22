@@ -1,0 +1,16 @@
+GET http://localhost:3000/products
+
+###
+
+DELETE http://localhost:3000/products/ec70
+content-type: application/json
+
+###
+
+POST http://localhost:3000/products
+content-type: application/json
+
+{
+  "name": "Product 6",
+  "price": 1990
+}
