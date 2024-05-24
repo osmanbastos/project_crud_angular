@@ -1,6 +1,6 @@
 # ProjectCrudAngular
 ## PT-BR
-Projeto de cadastro de produtos, com finalidade acadêmica, para aprender os fundamentos de Angular, sua organização, componentes, padrões de arquivos, Tags customizadas e métodos CRUD.
+Projeto de cadastro de produtos, com finalidade acadêmica, para aprender os fundamentos de Angular, sua organização, componentes, decorators, directives, routes pipes, observables e services, padrões de arquivos, Tags customizadas, estilizando com o Material Design e utilizando métodos CRUD.
 
 Primeiro passo será instalar o Angular CLI:
 $ npm i -g @angular/cli
