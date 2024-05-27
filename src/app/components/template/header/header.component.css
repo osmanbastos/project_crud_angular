@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+}  
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo_img {
+    width: 120px;
+}
+
+@media screen and (max-width: 599px){
+    .logo_img {
+        width: 60px;
+    }
+}
+
+.header .title-group {
+    padding-right: 25px;
+}
+
+.header .title-group i {
+    padding-right: 5px;
+}

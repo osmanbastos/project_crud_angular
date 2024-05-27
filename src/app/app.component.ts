@@ -7,7 +7,11 @@ import { HeaderComponent } from "./components/template/header/header.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HeaderComponent]
+    imports: [
+      RouterOutlet,
+      HeaderComponent,
+      MatToolbarModule
+    ]
 })
 export class AppComponent {
   currentItem = 'project_crud_angular';
