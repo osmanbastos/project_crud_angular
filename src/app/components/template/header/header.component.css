@@ -15,9 +15,15 @@
 }
 
 @media screen and (max-width: 599px){
+    .header {
+        justify-content: space-between;
+    }
     .logo_img {
         width: 60px;
         padding-right: 5px;
+    }
+    .header a div {
+        display: none;
     }
 }
 
