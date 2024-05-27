@@ -9,18 +9,18 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit { // Implementa o OnInit
   imageSrc: string = '';
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver) {} // Injeta o BreakpointObserver
 
   ngOnInit(): void {
     this.breakpointObserver.observe([
-      Breakpoints.XSmall,
-      Breakpoints.Small,
-      Breakpoints.Medium,
-      Breakpoints.Large,
-      Breakpoints.XLarge
+      Breakpoints.XSmall, // Menor que 600px
+      Breakpoints.Small, // Entre 600px e 959px
+      Breakpoints.Medium, // Entre 960px e 1279px
+      Breakpoints.Large, // Entre 1280px e 1919px
+      Breakpoints.XLarge // Maior que 1920px
     ]).subscribe(result => {
       if (result.matches) {
         if (result.breakpoints[Breakpoints.XSmall]) {
