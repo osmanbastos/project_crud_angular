@@ -1,14 +1,27 @@
 .sidenav {
-    background-color: blue;
+    background-color: #DCDCDC;
     width: 7rem;
     padding-left: 0;
 }
 .sidenav a {
     padding: 0;
 }
-.content {
-
+.mat-toolbar {
+    background-color: #5ca2c5;
+    color: #F0FFF0;
+    font-size: small;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    height: 2rem;
 }
-.content button {
+.mat-toolbar button {
+    margin-left: .5rem;
     margin-right: .5rem;
+    padding: 0;
+    border-radius: 10%;
+    opacity: 0.6;
+}
+.content {
+    background-color: aliceblue;
 }
