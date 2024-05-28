@@ -1,0 +1,14 @@
+.sidenav {
+    background-color: blue;
+    width: 7rem;
+    padding-left: 0;
+}
+.sidenav a {
+    padding: 0;
+}
+.content {
+
+}
+.content button {
+    margin-right: .5rem;
+}
