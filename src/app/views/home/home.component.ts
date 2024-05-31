@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { PageNameService } from '../../services/page-name.service';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +12,6 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  constructor(private pageNameService: PageNameService) { }
+  ngOnInit() { this.pageNameService.setPageName('Home'); }
 }

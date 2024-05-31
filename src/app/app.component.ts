@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, OnInit, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./components/template/header/header.component";
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
+import { PageNameService } from './services/page-name.service';
 
 @Component({
     selector: 'app-root',
@@ -18,6 +19,16 @@ import { HomeComponent } from './views/home/home.component';
       HomeComponent
     ]
 })
-export class AppComponent {
-  currentItem = 'project_crud_angular';
+
+export class AppComponent implements OnInit {
+  pageName: string = '';
+
+  constructor(private pageNameService: PageNameService, private cdr: ChangeDetectorRef) {}
+
+  ngOnInit() {
+    this.pageNameService.pageName$.subscribe(name => {
+      this.pageName = name;
+      this.cdr.detectChanges(); // This line is missing in the original code
+    });
+  }
 }
