@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HomeComponent } from '../../../views/home/home.component';
 
 @Component({
@@ -13,7 +13,9 @@ import { HomeComponent } from '../../../views/home/home.component';
     MatSidenavModule,
     MatToolbarModule,
     RouterOutlet,
-    HomeComponent
+    HomeComponent,
+    RouterOutlet,
+    RouterLink
   ],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'

@@ -12,7 +12,7 @@ import { PageNameService } from './services/page-name.service';
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     imports: [
-      RouterOutlet,
+      RouterOutlet ,
       HeaderComponent,
       NavComponent,
       FooterComponent,
