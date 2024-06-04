@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './product-create.component.css'
 })
 export class ProductCreateComponent {
+  atributoLegal = 'qualquer';
 
+  fazerAlgo(): void {
+    console.log('Fazendo algo');
+  }
 }

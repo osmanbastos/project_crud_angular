@@ -1,6 +1,7 @@
 <button mat-raised-button 
-    color="primary">
-    Novo Produto
+    color="primary"
+    (click)="navigateToProductCreate()">Criar Produto
 </button>
 
 <app-product-read></app-product-read>
+<router-outlet></router-outlet>
