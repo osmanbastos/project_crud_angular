@@ -15,13 +15,7 @@
             </a>
         </mat-nav-list>
     </mat-sidenav>
-    <mat-sidenav-content class="content">
-        <mat-toolbar class="mat-toolbar" color="primary">
-            <button mat-icon-button (click)="sidenav.toggle()">
-                <i class="material-icons">menu</i>
-            </button>
-            <span>Navegação</span>
-        </mat-toolbar>
+    <mat-sidenav-content class="content">       
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>

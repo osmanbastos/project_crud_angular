@@ -24,6 +24,11 @@
       "id": "5",
       "name": "Playstation 5",
       "price": 5000
+    },
+    {
+      "id": "a7bc",
+      "name": "teste",
+      "price": 0
     }
   ]
 }
