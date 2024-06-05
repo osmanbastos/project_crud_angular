@@ -3,12 +3,20 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCard, MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-product-create',
   standalone: true,
   imports: [
     MatButtonModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCardModule
   ],
   templateUrl: './product-create.component.html',
   styleUrl: './product-create.component.css'
@@ -16,8 +24,8 @@ import { Router } from '@angular/router';
 export class ProductCreateComponent implements OnInit{
   
   product: Product = {
-    name: 'teste',
-    price: 0
+    name: '',
+    price: null
   }
 
   constructor( 

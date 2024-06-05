@@ -26,9 +26,19 @@
       "price": 5000
     },
     {
-      "id": "a7bc",
+      "id": "6",
       "name": "teste",
       "price": 0
+    },
+    {
+      "id": "7",
+      "name": "Amor",
+      "price": "999.99"
+    },
+    {
+      "id": "6873",
+      "name": "Teamo",
+      "price": "88.8"
     }
   ]
 }
