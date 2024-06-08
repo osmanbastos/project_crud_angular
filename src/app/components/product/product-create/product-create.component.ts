@@ -25,7 +25,7 @@ export class ProductCreateComponent implements OnInit{
   
   product: Product = {
     name: '',
-    price: 0
+    price: null
   }
 
   constructor( 
@@ -35,13 +35,18 @@ export class ProductCreateComponent implements OnInit{
   ngOnInit(): void {
   }
 
-  createProduct(): void {
-    this.productService.create(this.product).subscribe(() => {
-      this.productService.showMessage('Product created!');
-      this.router.navigate(['/products']);
-    })
+  async createProduct(): Promise<void> {
+    console.log('Criando Produto',this.product);
+    (await this.productService.create(this.product)).subscribe({
+      next: (res: any) => {
+        this.productService.showMessage('Product created!');
+        this.router.navigate(['/products']);
+      },
+      error: (err) => {
+        console.error('Create product error:', err);
+      }
+    });
   }
-
   cancelProduct(): void {
     this.router.navigate(['/products']);
   }
