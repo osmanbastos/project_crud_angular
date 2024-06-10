@@ -15,8 +15,8 @@
 
 .logo_img {
     position: relative;
-    margin-left: -2rem;
-    width: 180px;
+    margin-left: -1rem;
+    width: 127px;
 }
 
 @media screen and (max-width: 599px){
@@ -24,8 +24,8 @@
         justify-content: space-between;
     }
     .logo_img {
-        width: 60px;
-        padding-right: 5px;
+        margin-left: 10px;
+        width: 90px;
     }
     .header a div {
         display: none;
