@@ -1,6 +1,6 @@
 # ProjectCrudAngular
 ## PT-BR
-Projeto de cadastro de produtos, com finalidade acadêmica, para aprender os fundamentos de Angular, sua organização, componentes, decorators, directives, routes pipes, observables e services, padrões de arquivos, Tags customizadas, estilizando com o Material Design e utilizando métodos CRUD.
+Projeto de cadastro de produtos, com finalidade acadêmica, para aprender os fundamentos de Angular, sua organização, componentes, decorators, directives, routes, pipes, observables, injection e services, padrões de arquivos, Tags customizadas, estilizando com o Material Design e utilizando métodos CRUD.
 
 Primeiro passo será instalar o Angular CLI:
 $ npm i -g @angular/cli
@@ -13,11 +13,18 @@ Nota: Aqui podemos passar opções como --"minimal" para um projeto pequeno, por
 Na instalação escolhi o style CSS, SSR/SSG-yes.
 Nota: Tive que alterar no powershell a política de segurança de execução de scripts para executar o ng new.
 
-#Back-end
-Como o objetivo é focar no uso do Angular, criei um arquivo db.json, instalei o json-server de forma global (npm i -g json-server) e rodei o (json-server --w db.json) para observar alterações.
+# Back-end
+Como o objetivo é focar no uso do Angular, inicialmente criei um arquivo db.json, instalei o json-server de forma global (npm i -g json-server) e rodei o (json-server --w db.json) para observar alterações.
 Fiz um teste de CRUD com a extensão REST do VS Code e com o POSTMAN.
+Depois acabei optando por utilizar o supabase para colocar o projeto online.
 
-Próximo passo é retornar à construção da aplicação (components), ajustar header, criar um rodapé e a navegação.
+# Próximo passo foi construir os componentes da aplicação, criar os templates do header, nav e footer.
+
+# Criar os components para o CRUD de Products.
+
+# Criei um service de controle dos nomes das páginas no header.
+
+# Dentro de Products criei um service para manusear as solicitações do CRUD.
 
 ## EN-US
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
