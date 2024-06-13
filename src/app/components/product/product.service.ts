@@ -10,7 +10,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 })
 export class ProductService {
 
-  baseUrl = 'http://localhost:3000/products'
+  baseUrl = 'https://api-crud-backend.vercel.app/products'
 
   constructor(
     private http: HttpClient,
