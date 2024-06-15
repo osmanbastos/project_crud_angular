@@ -1,5 +1,5 @@
 export interface Product {
-    id?: number; // ? means that this attribute is optional
+    id?: number | null; // ? means that this attribute is optional
     name: string;
     price: number | null;
 }

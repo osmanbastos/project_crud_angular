@@ -4,6 +4,8 @@ import { ProductReadComponent } from '../../components/product/product-read/prod
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-product-crud',
@@ -13,7 +15,9 @@ import { MatButtonModule } from '@angular/material/button';
     RouterLink, 
     RouterOutlet,
     MatSnackBarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   templateUrl: './product-crud.component.html',
   styleUrl: './product-crud.component.css'
