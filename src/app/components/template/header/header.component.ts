@@ -15,6 +15,6 @@ export class HeaderComponent implements OnInit { // Implementa o OnInit
   @Input() pageName = '';
 
   ngOnInit(): void {
-    this.imageSrc = '../../../../assets/ATELIER2.png';
+    this.imageSrc = '../../../../assets/atelie.png';
   }
 }

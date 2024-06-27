@@ -14,9 +14,8 @@
 }
 
 .logo_img {
-    position: relative;
-    margin-left: -2rem;
-    width: 180px;
+    width: 7rem;
+    margin-left: -1px;
 }
 
 @media screen and (max-width: 599px){
